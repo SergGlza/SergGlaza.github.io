@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input[type="file"]{
+    display: none;
+}
+label{
+    position: fixed;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top:80%;
+    left: 50%;
+    display: block;
+    cursor: pointer;
+    border-radius:15px;
+    border: 3px solid #000;
+    transform: translate(-50%,-50%);
+    background-color:white;
+    z-index: 100;
+}
+.line1{
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color:#000;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:100px;
+}
+.line2{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 20px;
+    background-color:#000;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius:100px;
+}
+
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+section video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.video-player{
+width: 85%;
+position: absolute;
+left: 50%;
+top:50%;
+transform: translate(-50%,-50%);
+}
+video:focus{
+    overflow: none;
+}
+
+
+.soundButton{
+    position: absolute;
+    border: 0;
+    border-radius:50px;  
+    top:12px;
+    right: 30px;
+    width: 60px;
+    cursor: pointer;
+    z-index: 100;
+    background-color:red
+}
+.sound{  
+    width: 60px;
+    height: 60px;
+    border-radius:40px;
+}
+.nextVideoBack{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    opacity: 0;
+    z-index: 90;
+}
+.soundButtonForward{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    opacity: 0;
+    z-index: 90;
+}
